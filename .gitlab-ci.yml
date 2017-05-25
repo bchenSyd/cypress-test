@@ -1,0 +1,12 @@
+# lint this file using
+# https://gitlab.com/ci/lint
+image: cypress/internal:cy-0.19.2
+cypress-e2e:
+  stage: test
+  script:
+    - cypress run
+  artifacts:
+    expire_in: 1 week
+    paths:
+    - cypress/screenshots
+    - cypress/videos
