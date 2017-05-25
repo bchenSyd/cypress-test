@@ -44,3 +44,12 @@ See the [.gitlab-ci.yml](.gitlab-ci.yml) in this project; we store generated
 screenshots and videos as artifacts.
 
 ![Finished job](images/finished-job.png)
+
+## Happy testing
+
+If you find problems with Cypress and CI, please
+
+- consult the [documentation](https://on.cypress.io)
+- ask in our [Gitter channel](https://gitter.im/cypress-io/cypress)
+- find an existing [issue](https://github.com/cypress-io/cypress/issues)
+  or open a new one
