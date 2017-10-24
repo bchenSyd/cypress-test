@@ -6,10 +6,6 @@ cypress-e2e:
   script:
     - npm install
     - $(npm bin)/cypress run
-  cache:
-    untracked: true
-    paths:
-    - node_modules/
   artifacts:
     expire_in: 1 week
     paths:
@@ -22,10 +18,6 @@ cypress-e2e-chrome:
   script:
     - npm install
     - $(npm bin)/cypress run --browser chrome
-  cache:
-    untracked: true
-    paths:
-    - node_modules/
   artifacts:
     expire_in: 1 week
     paths:
