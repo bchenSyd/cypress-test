@@ -2,7 +2,6 @@
 
 [![pipeline status](https://gitlab.com/cypress-io/cypress-example-docker-gitlab/badges/master/pipeline.svg)](https://gitlab.com/cypress-io/cypress-example-docker-gitlab/commits/master)
 
-
 Running your Cypress E2E tests on GitLab CI is very simple. You can either
 start with a base image or with an image that already includes Cypress tool.
 
