@@ -8,6 +8,7 @@ cypress-e2e:
     - $(npm bin)/cypress run
   artifacts:
     expire_in: 1 week
+    when: always
     paths:
     - cypress/screenshots
     - cypress/videos
@@ -20,6 +21,7 @@ cypress-e2e-chrome:
     - $(npm bin)/cypress run --browser chrome
   artifacts:
     expire_in: 1 week
+    when: always
     paths:
     - cypress/screenshots
     - cypress/videos
