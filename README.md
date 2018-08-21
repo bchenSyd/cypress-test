@@ -9,15 +9,19 @@ start with a base image or with an image that already includes Cypress tool.
 
 You can derive your custom CI image from
 [cypress/base](https://hub.docker.com/r/cypress/base/) and install
-`cypress`. Here is a typical [.gitlab-ci.yml](.gitlab-ci.yml) file
+`cypress`. Here is a typical `.gitlab-ci.yml` file
 
 ```yaml
-image: cypress/base
+image: cypress/base:10
 cypress-e2e:
   script:
     - npm install
     - $(npm bin)/cypress run
 ```
+
+See [.gitlab-ci.yml](.gitlab-ci.yml) for more realistic setup with caching and parallel jobs
+
+See [Cypress Continuous Integration](http://on.cypress.io/continuous-integration) documentation for more information.
 
 ## Happy testing
 
