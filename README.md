@@ -5,6 +5,8 @@
 Running your Cypress E2E tests on GitLab CI is very simple. You can either
 start with a base image or with an image that already includes Cypress tool.
 
+You can also find GitLab CI (and other CIs) example in [cypress-example-kitchensink](https://github.com/cypress-io/cypress-example-kitchensink#ci-status).
+
 ## Base image
 
 You can derive your custom CI image from
