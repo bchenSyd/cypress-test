@@ -48,6 +48,9 @@ cypress-e2e:
     paths:
     - cypress/screenshots
     - cypress/videos
+    reports:
+      junit:
+        - results/TEST-*.xml
 
 cypress-e2e-chrome:
   image: cypress/browsers:chrome67
@@ -60,5 +63,8 @@ cypress-e2e-chrome:
     paths:
     - cypress/screenshots
     - cypress/videos
+    reports:
+      junit:
+        - results/TEST-*.xml
 
 # tip: lint this file using https://gitlab.com/ci/lint
