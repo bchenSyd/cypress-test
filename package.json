@@ -11,12 +11,6 @@
     "type": "git",
     "url": "git+ssh://git@gitlab.com/cypress-io/cypress-example-docker-gitlab.git"
   },
-  "keywords": [
-    "cypress",
-    "cypress-io",
-    "example",
-    "gitlab"
-  ],
   "author": "gleb@cypress.io",
   "license": "ISC",
   "bugs": {
@@ -24,6 +18,6 @@
   },
   "homepage": "https://gitlab.com/cypress-io/cypress-example-docker-gitlab#README",
   "devDependencies": {
-    "cypress": "3.2.0"
+    "cypress": "6.8.0"
   }
 }

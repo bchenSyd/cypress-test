@@ -5,3 +5,4 @@ cypress/videos/
 node_modules/
 cypress/integration/header-spec.js
 cypress/screenshots/
+cache/

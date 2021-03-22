@@ -32,13 +32,13 @@ install:
     # show where the Cypress test runner binaries are cached
     - $(npm bin)/cypress cache path
     # show all installed versions of Cypress binary
-    - $(npm bin)/cypress cache list
+    - $(npm bin)/cypress cache list --size
     - $(npm bin)/cypress verify
 
 # two jobs that run after "install" job finishes
 # NPM dependencies and Cypress binary should be already installed
 cypress-e2e:
-  image: cypress/base:10
+  image: cypress/base:12
   stage: test
   script:
     - $(npm bin)/cypress run
@@ -53,7 +53,7 @@ cypress-e2e:
         - results/TEST-*.xml
 
 cypress-e2e-chrome:
-  image: cypress/browsers:chrome67
+  image: cypress/browsers:chrome69
   stage: test
   script:
     - $(npm bin)/cypress run --browser chrome
